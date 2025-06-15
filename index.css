@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: #1c1c1c;
+    color: #ffe4c4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#honeycomb {
+    position: absolute;
+    overflow: hidden;
+    top: -45px;
+    left: -50px;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+main {
+    padding-bottom: 2.5rem;
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 2%;
+}
+
+#greeting {
+    margin: 5% auto 1%;
+    font-size: 40px;
+    letter-spacing: 3px;
+    font-style: oblique;
+}
+
+#subheading {
+    letter-spacing: 1px;
+    width: 40%;
+    margin: 1% auto 1%
+}
+
+#headshot {
+    width: 12%;
+    border-radius: 50%;
+    border: 3px solid bisque
+}
+
+#experience {
+    width: 38%;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin: auto;
+}
+
+a, a::after {
+    color: goldenrod;
+}
+
+#links {
+    list-style: none;
+}
+
+#links li {
+    display: inline-block;
+    padding: 0 2.5%;
+}
+
+a > p {
+    font-size: 10px;
+    margin-top: 2px;
+}
+
+#icons {
+    width: 40px;
+}
