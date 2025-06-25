@@ -1,1 +1,1 @@
-Repo that contains files for my persona website
+Repo that contains files for my personal website
