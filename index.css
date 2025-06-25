@@ -7,20 +7,12 @@
 body {
     text-align: center;
     background: #1c1c1c;
+    background-image: url(assets/images/Hex\ Honeycomb\ Background.png);
+    background-size: 125px;
     color: #ffe4c4;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-}
-
-#honeycomb {
-    position: absolute;
-    overflow: hidden;
-    top: -45px;
-    left: -50px;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
 }
 
 main {
@@ -33,7 +25,7 @@ footer {
 }
 
 #greeting {
-    margin: 5% auto 1%;
+    margin: 3% auto 1%;
     font-size: 40px;
     letter-spacing: 3px;
     font-style: oblique;
@@ -46,9 +38,47 @@ footer {
 }
 
 #headshot {
-    width: 12%;
+    width: 10%;
     border-radius: 50%;
-    border: 3px solid bisque
+    border: 3px solid #ffe4c4;
+}
+
+@keyframes headshot-pulse {
+    0% {box-shadow: 0 0 0 #ffe4c4;}
+    50% {box-shadow: 0 0 15px #ffe4c4;}
+    100% {box-shadow: 0 0 0 #ffe4c4;}
+}
+
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes text-pulse {
+    0% {text-shadow: 0 0 0 white;}
+    50% {text-shadow: 0 0 10px white;}
+    100% {text-shadow: 0 0 0 white;}
+}
+
+.pulse {
+    animation-name: headshot-pulse;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.fade-in {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+.text-pulse {
+    animation-name: text-pulse;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.glow {
+    text-shadow: 0 0 10px white;
 }
 
 #experience {
@@ -56,7 +86,7 @@ footer {
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 2;
-    margin: auto;
+    margin: 0 auto 25px;
 }
 
 a, a::after {
@@ -79,4 +109,32 @@ a > p {
 
 #icons {
     width: 40px;
+}
+
+#egg-container{
+    padding: 10px;
+    display: inline-block;
+    max-width: 35%;
+    border-radius: 8px;
+}
+
+#ee-title {
+    font-style: italic;
+}
+
+#ee-body {
+    margin: 15px auto;
+    width: 30%;
+}
+
+#ee-dash-container {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#ee-button {
+    background-color: #ffe4c4;
+    border: 3px goldenrod solid;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
