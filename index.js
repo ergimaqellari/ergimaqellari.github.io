@@ -42,7 +42,24 @@ function eggIsDone() {
             for (let i = 0; i < dashArray.length; i++) {
                 dashArray[i].innerText = ` ${eggData.finalText[i]} `
             }
+            eeButton.innerText = "Remove Egg Elements"
+            eeButton.addEventListener("click", () => {
+                eeLink.removeAttribute("href")
+                eeLink.removeAttribute("target")
+                removeEgg()
+            })
         })
+    }
+}
+
+function removeEgg() {
+    eggContainerEl.classList.remove("fade-in")
+    eggContainerEl.classList.add("fade-out")
+    eggContainerEl.style.opacity = "0"
+    headshotEl.classList.remove("pulse")
+    headshotEl.style.cursor = "default"
+    for (const element of eggLettersArray) {
+        element.style.cursor = "default"
     }
 }
 
@@ -92,5 +109,6 @@ headshotEl.addEventListener("click", () => {
         eggContainerEl.appendChild(eggDashes);
 
         eggContainerEl.classList.add("fade-in");
+        eggContainerEl.scrollIntoView({ behavior: "smooth" });
     }
 })

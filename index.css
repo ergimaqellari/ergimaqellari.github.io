@@ -33,31 +33,61 @@ footer {
 
 #subheading {
     letter-spacing: 1px;
-    width: 40%;
     margin: 1% auto 1%
 }
 
 #headshot {
-    width: 10%;
+    max-width: 175px;
     border-radius: 50%;
     border: 3px solid #ffe4c4;
 }
 
 @keyframes headshot-pulse {
-    0% {box-shadow: 0 0 0 #ffe4c4;}
-    50% {box-shadow: 0 0 15px #ffe4c4;}
-    100% {box-shadow: 0 0 0 #ffe4c4;}
+    0% {
+        box-shadow: 0 0 0 #ffe4c4;
+    }
+
+    50% {
+        box-shadow: 0 0 15px #ffe4c4;
+    }
+
+    100% {
+        box-shadow: 0 0 0 #ffe4c4;
+    }
 }
 
 @keyframes fade-in {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes text-pulse {
-    0% {text-shadow: 0 0 0 white;}
-    50% {text-shadow: 0 0 10px white;}
-    100% {text-shadow: 0 0 0 white;}
+    0% {
+        text-shadow: 0 0 0 white;
+    }
+
+    50% {
+        text-shadow: 0 0 10px white;
+    }
+
+    100% {
+        text-shadow: 0 0 0 white;
+    }
 }
 
 .pulse {
@@ -68,6 +98,11 @@ footer {
 
 .fade-in {
     animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+.fade-out {
+    animation-name: fade-out;
     animation-duration: 1.5s;
 }
 
@@ -82,14 +117,15 @@ footer {
 }
 
 #experience {
-    width: 38%;
+    max-width: 650px;
     font-size: 18px;
     letter-spacing: 1px;
     line-height: 2;
     margin: 0 auto 25px;
 }
 
-a, a::after {
+a,
+a::after {
     color: goldenrod;
 }
 
@@ -102,7 +138,7 @@ a, a::after {
     padding: 0 2.5%;
 }
 
-a > p {
+a>p {
     font-size: 10px;
     margin-top: 2px;
 }
@@ -111,10 +147,10 @@ a > p {
     width: 40px;
 }
 
-#egg-container{
+#egg-container {
     padding: 10px;
     display: inline-block;
-    max-width: 35%;
+    max-width: 500px;
     border-radius: 8px;
 }
 
