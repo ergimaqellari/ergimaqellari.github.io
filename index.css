@@ -6,7 +6,7 @@
 
 body {
     text-align: center;
-    background: #1c1c1c;
+    background: #111111;
     background-image: url(assets/images/Hex\ Honeycomb\ Background.png);
     background-size: 125px;
     color: #ffe4c4;
@@ -17,6 +17,10 @@ body {
 
 main {
     padding-bottom: 2.5rem;
+}
+
+main p {
+    max-width: 80%;
 }
 
 footer {

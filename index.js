@@ -61,6 +61,7 @@ function removeEgg() {
     for (const element of eggLettersArray) {
         element.style.cursor = "default"
     }
+    document.getElementById("greeting").scrollIntoView({ behavior: "smooth" });
 }
 
 setTimeout(() => {
